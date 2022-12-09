@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FuvRbgPhu90gHGVlQWVqkHz1+h2CEq8FHdp/K8TQ6VXMBAcO0wkjwJB1UTOKails1yoaUTRC7kw2fUIt1sLvrA==",
+  "success": true,
+  "projectFilePath": "/home/dalinar/Projects/ShippingCalculator/ShippingCalculator.csproj",
+  "expectedPackageFiles": [
+    "/home/dalinar/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
+    "/home/dalinar/.nuget/packages/microsoft.aspnetcore.spaproxy/6.0.10/microsoft.aspnetcore.spaproxy.6.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
