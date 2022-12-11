@@ -36,16 +36,29 @@ const ParcelPricingPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send the package dimensions and weight to the backend for calculation
-  };
+
+    const { width, height, depth } = dimensions;
+    const data = { width, height, depth, weight };
+
+    fetch("/api/parcel-pricing/calculate-price", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(responseData => handleResponse(responseData))
+    .catch(error => {
+        // handle error
+    });
+};
 
   const handleResponse = (response) => {
     if (response.ok) {
-      // Display the calculated price
       setPrice(response.data.price);
       setValidationError(null);
     } else {
-      // Display the validation error
       setPrice(0);
       setValidationError(response.data.validationError);
     }
