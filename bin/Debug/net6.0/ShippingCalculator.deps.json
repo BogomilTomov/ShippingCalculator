@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ShippingCalculator/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.4.0",
+          "Microsoft.AspNetCore.SpaProxy": "6.0.10"
+        },
+        "runtime": {
+          "ShippingCalculator.dll": {}
+        }
+      },
+      "FluentValidation/11.4.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.4.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SpaProxy/6.0.10": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {
+            "assemblyVersion": "6.0.10.0",
+            "fileVersion": "6.0.1022.47617"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ShippingCalculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/11.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
+      "path": "fluentvalidation/11.4.0",
+      "hashPath": "fluentvalidation.11.4.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SpaProxy/6.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wRRnXAFKDcE9WMMoU4PW8O1PRQgXngshtFxcdtVMLdo0DGSWkAAoZbwIYN90fHxKzfTGy5LT9ucR9ToRqrRgvw==",
+      "path": "microsoft.aspnetcore.spaproxy/6.0.10",
+      "hashPath": "microsoft.aspnetcore.spaproxy.6.0.10.nupkg.sha512"
+    }
+  }
+}

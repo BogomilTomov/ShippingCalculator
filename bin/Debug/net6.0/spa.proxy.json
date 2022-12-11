@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44430",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "/home/dalinar/Projects/ShippingCalculator/ClientApp/",
+"MaxTimeoutInSeconds": "120"
+}
+}

@@ -6,7 +6,7 @@ using ShippingCalculator.Validators;
 namespace shippingApp.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class ParcelController : ControllerBase
 {
     private readonly IParcelPriceProcessor _parcelPriceProcessor;

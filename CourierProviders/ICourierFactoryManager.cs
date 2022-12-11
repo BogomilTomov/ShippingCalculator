@@ -4,5 +4,5 @@ namespace ShippingCalculator.CourierProviders;
 
 public interface ICourierFactoryManager
 {
-    public IEnumerable<ICourierProvider> GetAllProviderFactories();
+    public IEnumerable<ICourierProvider> GetAllCourierProviders();
 }
