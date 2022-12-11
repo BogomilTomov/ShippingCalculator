@@ -29,6 +29,12 @@ public class ParcelController : ControllerBase
 
         var price = _parcelPriceProcessor.GetLowestPrice(data);
 
+        // Add check for no valid quote found
+        // if (price == 0)
+        // {
+        //     return ...
+        // }
+
         return Ok(price);
     }
 }

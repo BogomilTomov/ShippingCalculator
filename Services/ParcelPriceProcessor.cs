@@ -7,9 +7,9 @@ public class ParcelPriceProcessor : IParcelPriceProcessor
 {
     private readonly IEnumerable<ICourierProvider> _courierProviders;
 
-    public ParcelPriceProcessor(ICourierProviderFactory courierProviderFactory)
+    public ParcelPriceProcessor(ICourierFactoryManager courierFactoryManager)
     {
-        _courierProviders = courierProviderFactory.GetAllCourierProviders();
+        _courierProviders = courierFactoryManager.GetAllCourierProviders();
     }
 
     public decimal GetLowestPrice(ParcelData parcelData)
