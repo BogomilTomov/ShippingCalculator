@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using shippingApp.Models;
+using ShippingCalculator.Models;
+using ShippingCalculator.Services;
+using ShippingCalculator.Validators;
 
 namespace shippingApp.Controllers;
 
@@ -15,9 +17,9 @@ public class ParcelController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CalculatePrice([FromBody] PackageData data)
+    public IActionResult CalculatePrice([FromBody] ParcelData data)
     {
-        var validator = new PackageDataValidator();
+        var validator = new ParcelDataInputValidator();
         var validationResult = validator.Validate(data);
 
         if (!validationResult.IsValid)
@@ -26,6 +28,7 @@ public class ParcelController : ControllerBase
         }
 
         var price = _parcelPriceProcessor.GetLowestPrice(data);
+
         return Ok(price);
     }
 }

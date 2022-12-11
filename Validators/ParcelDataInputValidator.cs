@@ -2,11 +2,11 @@ using FluentValidation;
 using ShippingCalculator.Models;
 
 namespace ShippingCalculator.Validators;
-public class PackageDataInputValidator : AbstractValidator<ParcelData>
+
+public class ParcelDataInputValidator : AbstractValidator<ParcelData>
 {
-    public void DataValidator()
+    public ParcelDataInputValidator()
     {
-        // Validation rules for the package data
         RuleFor(x => x.Width)
             .GreaterThan(0)
             .WithMessage("Width must be greater than 0");

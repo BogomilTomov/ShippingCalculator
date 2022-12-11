@@ -5,7 +5,7 @@ namespace ShippingCalculator.Validators;
 
 public class Cargo4YouProviderValidator : AbstractValidator<ParcelData>
 {
-    public void PackageDataValidator()
+    public Cargo4YouProviderValidator()
     {
         RuleFor(x => x.Width)
             .LessThan(20)

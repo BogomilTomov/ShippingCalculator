@@ -14,7 +14,7 @@ public class CourierProviderFactory : ICourierProviderFactory
         };
     }
 
-    private ICourierProvider CreateCargo4YouProvider()
+    public ICourierProvider CreateCargo4YouProvider()
     {
         var dimensionTiers = new List<Tier>()
         {
